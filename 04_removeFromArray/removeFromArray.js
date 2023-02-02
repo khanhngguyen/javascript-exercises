@@ -7,13 +7,13 @@ OR check every item in [array], if NOT match items in [item to remove] => return
  */
 
 const removeFromArray = function(arr, ...toRemove) {
-let result = [];
-arr.forEach((item) => {
-    if (toRemove.includes(item) === false) {
-        return result.push(item);
-    }
-});
-return result;
+    let result = [];
+    arr.forEach((item) => {
+        if (toRemove.includes(item) === false) {
+            return result.push(item);
+        }
+    });
+    return result;
 };
 
 // Do not edit below this line
